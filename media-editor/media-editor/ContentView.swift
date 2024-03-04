@@ -13,7 +13,8 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("you_have_no_projects-yet")
+//                .environment(\.locale, .init(identifier: "ar"))
         }
         .padding()
     }

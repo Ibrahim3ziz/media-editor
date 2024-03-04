@@ -14,6 +14,7 @@
 		8FBE3DA12B95525F00C46030 /* media_editorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DA02B95525F00C46030 /* media_editorTests.swift */; };
 		8FBE3DAB2B95526000C46030 /* media_editorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DAA2B95526000C46030 /* media_editorUITests.swift */; };
 		8FBE3DAD2B95526000C46030 /* media_editorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DAC2B95526000C46030 /* media_editorUITestsLaunchTests.swift */; };
+		8FBE3DBC2B95535800C46030 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8FBE3DBB2B95535800C46030 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8FBE3DA62B95526000C46030 /* media-editorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "media-editorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBE3DAA2B95526000C46030 /* media_editorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = media_editorUITests.swift; sourceTree = "<group>"; };
 		8FBE3DAC2B95526000C46030 /* media_editorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = media_editorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FBE3DBB2B95535800C46030 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		8FBE3DB92B9552C100C46030 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8FBE3DBB2B95535800C46030 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 8FBE3D832B95525D00C46030;
 			productRefGroup = 8FBE3D8D2B95525D00C46030 /* Products */;
@@ -249,6 +253,7 @@
 			files = (
 				8FBE3D972B95525F00C46030 /* Preview Assets.xcassets in Resources */,
 				8FBE3D942B95525F00C46030 /* Assets.xcassets in Resources */,
+				8FBE3DBC2B95535800C46030 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
