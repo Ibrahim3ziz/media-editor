@@ -94,6 +94,8 @@
 		8FBE3D8E2B95525D00C46030 /* media-editor */ = {
 			isa = PBXGroup;
 			children = (
+				8FBE3DBA2B9552D200C46030 /* Components */,
+				8FBE3DB92B9552C100C46030 /* Resources */,
 				8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */,
 				8FBE3D912B95525D00C46030 /* ContentView.swift */,
 				8FBE3D932B95525F00C46030 /* Assets.xcassets */,
@@ -125,6 +127,20 @@
 				8FBE3DAC2B95526000C46030 /* media_editorUITestsLaunchTests.swift */,
 			);
 			path = "media-editorUITests";
+			sourceTree = "<group>";
+		};
+		8FBE3DB92B9552C100C46030 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8FBE3DBA2B9552D200C46030 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
