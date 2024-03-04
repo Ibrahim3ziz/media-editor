@@ -9,14 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("you_have_no_projects-yet")
-//                .environment(\.locale, .init(identifier: "ar"))
+        NavigationStack {
+            ZStack {
+                
+                Text("")
+                    .navigationTitle("")
+                    .toolbar {
+                        ToolbarItem(placement: .topBarLeading) {
+                            Image(systemName: "questionmark.circle")
+                        }
+                        
+                        ToolbarItem(placement: .topBarTrailing) {
+                            XTextImageButton(title: "pro_title", image: Image(.homeEmptyState))
+                        }
+                    }
+                
+                EmptyStateView()
+            }
         }
-        .padding()
     }
 }
 

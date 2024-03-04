@@ -1,12 +1,32 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "you_have_no_projects-yet" : {
+    "" : {
+
+    },
+    "pro_title" : {
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
+            "value" : "محترف"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        }
+      }
+    },
+    "you_have_no_projects_yet" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "ليست لديك أي مشاريع!"
           }
         },

@@ -15,6 +15,9 @@
 		8FBE3DAB2B95526000C46030 /* media_editorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DAA2B95526000C46030 /* media_editorUITests.swift */; };
 		8FBE3DAD2B95526000C46030 /* media_editorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DAC2B95526000C46030 /* media_editorUITestsLaunchTests.swift */; };
 		8FBE3DBC2B95535800C46030 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8FBE3DBB2B95535800C46030 /* Localizable.xcstrings */; };
+		8FBE3DBF2B95548700C46030 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DBE2B95548700C46030 /* EmptyStateView.swift */; };
+		8FBE3DC22B955A8E00C46030 /* XFillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DC12B955A8E00C46030 /* XFillButton.swift */; };
+		8FBE3DC42B955F3F00C46030 /* XTextImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DC32B955F3F00C46030 /* XTextImageButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		8FBE3DAA2B95526000C46030 /* media_editorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = media_editorUITests.swift; sourceTree = "<group>"; };
 		8FBE3DAC2B95526000C46030 /* media_editorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = media_editorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8FBE3DBB2B95535800C46030 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8FBE3DBE2B95548700C46030 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		8FBE3DC12B955A8E00C46030 /* XFillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFillButton.swift; sourceTree = "<group>"; };
+		8FBE3DC32B955F3F00C46030 /* XTextImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTextImageButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +102,10 @@
 		8FBE3D8E2B95525D00C46030 /* media-editor */ = {
 			isa = PBXGroup;
 			children = (
+				8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */,
 				8FBE3DBA2B9552D200C46030 /* Components */,
 				8FBE3DB92B9552C100C46030 /* Resources */,
-				8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */,
+				8FBE3DBD2B95546800C46030 /* Views */,
 				8FBE3D912B95525D00C46030 /* ContentView.swift */,
 				8FBE3D932B95525F00C46030 /* Assets.xcassets */,
 				8FBE3D952B95525F00C46030 /* Preview Content */,
@@ -142,8 +149,26 @@
 		8FBE3DBA2B9552D200C46030 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8FBE3DC02B955A4200C46030 /* XButton */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		8FBE3DBD2B95546800C46030 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE3DBE2B95548700C46030 /* EmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8FBE3DC02B955A4200C46030 /* XButton */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE3DC12B955A8E00C46030 /* XFillButton.swift */,
+				8FBE3DC32B955F3F00C46030 /* XTextImageButton.swift */,
+			);
+			path = XButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBE3DBF2B95548700C46030 /* EmptyStateView.swift in Sources */,
+				8FBE3DC42B955F3F00C46030 /* XTextImageButton.swift in Sources */,
 				8FBE3D922B95525D00C46030 /* ContentView.swift in Sources */,
 				8FBE3D902B95525D00C46030 /* media_editorApp.swift in Sources */,
+				8FBE3DC22B955A8E00C46030 /* XFillButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
