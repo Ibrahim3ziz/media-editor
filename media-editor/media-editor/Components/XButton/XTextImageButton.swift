@@ -18,7 +18,6 @@ struct XTextImageButton: View {
             
         } label: {
             HStack {
-                
                 image
                     .frame(width: 24, height: 24, alignment: .center)
                     .clipped()
@@ -26,7 +25,6 @@ struct XTextImageButton: View {
                     .foregroundStyle(.white)
                 
                 Text(title)
-                
             }
             .foregroundColor(.white)
             .font(.system(size: 16, weight: .semibold))
