@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0766602BAA4C5E00FD90DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07665F2BAA4C5E00FD90DE /* Colors.swift */; };
 		8F2014922B9B5C1800331110 /* ButtonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2014912B9B5C1800331110 /* ButtonProtocols.swift */; };
 		8F2014942B9B60CA00331110 /* ButtonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2014932B9B60CA00331110 /* ButtonEnums.swift */; };
 		8FA4EAFA2BA7C3080046ACF4 /* ButtonSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4EAF92BA7C3080046ACF4 /* ButtonSizes.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F07665F2BAA4C5E00FD90DE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8F2014912B9B5C1800331110 /* ButtonProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonProtocols.swift; sourceTree = "<group>"; };
 		8F2014932B9B60CA00331110 /* ButtonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEnums.swift; sourceTree = "<group>"; };
 		8FA4EAF92BA7C3080046ACF4 /* ButtonSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSizes.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F07665E2BAA4C4D00FD90DE /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				8F07665F2BAA4C5E00FD90DE /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		8FA4EAF82BA7C2A80046ACF4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +195,7 @@
 				8FA4EB382BA7D43F0046ACF4 /* Info.plist */,
 				8FA4EAFC2BA7CD550046ACF4 /* Localization */,
 				8FA4EAFB2BA7CD4F0046ACF4 /* Fonts */,
+				8F07665E2BAA4C4D00FD90DE /* Colors */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -350,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FBE3DBF2B95548700C46030 /* EmptyStateView.swift in Sources */,
+				8F0766602BAA4C5E00FD90DE /* Colors.swift in Sources */,
 				8F2014922B9B5C1800331110 /* ButtonProtocols.swift in Sources */,
 				8FBE3DC42B955F3F00C46030 /* XTextImageButton.swift in Sources */,
 				8FBE3D922B95525D00C46030 /* ContentView.swift in Sources */,
