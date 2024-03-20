@@ -4,6 +4,23 @@
     "" : {
 
     },
+    "create_ptoject" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنشئ مشروعك"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "create project"
+          }
+        }
+      }
+    },
     "pro_title" : {
       "extractionState" : "manual",
       "localizations" : {
