@@ -14,7 +14,7 @@ struct EmptyStateView: View {
             
             Text("you_have_no_projects_yet")
                 .font(.great)
-                .foregroundStyle(.gray)
+                .foregroundStyle(Color.opacitywh2)
         }
     }
 }
