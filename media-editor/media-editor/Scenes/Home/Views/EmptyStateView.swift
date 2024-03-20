@@ -16,6 +16,7 @@ struct EmptyStateView: View {
                 .font(.great)
                 .foregroundStyle(Color.opacitywh2)
         }
+        .background(Color.blackHq)
     }
 }
 

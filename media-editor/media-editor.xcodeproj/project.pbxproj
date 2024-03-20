@@ -15,7 +15,7 @@
 		8FA4EB002BA7CD6B0046ACF4 /* Aleo-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FA4EAFE2BA7CD6B0046ACF4 /* Aleo-VariableFont_wght.ttf */; };
 		8FA4EB3B2BA7D71E0046ACF4 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4EB3A2BA7D71E0046ACF4 /* Fonts.swift */; };
 		8FBE3D902B95525D00C46030 /* media_editorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */; };
-		8FBE3D922B95525D00C46030 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3D912B95525D00C46030 /* ContentView.swift */; };
+		8FBE3D922B95525D00C46030 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3D912B95525D00C46030 /* HomeView.swift */; };
 		8FBE3D942B95525F00C46030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBE3D932B95525F00C46030 /* Assets.xcassets */; };
 		8FBE3D972B95525F00C46030 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBE3D962B95525F00C46030 /* Preview Assets.xcassets */; };
 		8FBE3DA12B95525F00C46030 /* media_editorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DA02B95525F00C46030 /* media_editorTests.swift */; };
@@ -55,7 +55,7 @@
 		8FA4EB3A2BA7D71E0046ACF4 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		8FBE3D8C2B95525D00C46030 /* media-editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "media-editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = media_editorApp.swift; sourceTree = "<group>"; };
-		8FBE3D912B95525D00C46030 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FBE3D912B95525D00C46030 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8FBE3D932B95525F00C46030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBE3D962B95525F00C46030 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FBE3D9C2B95525F00C46030 /* media-editorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "media-editorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +100,24 @@
 				8F07665F2BAA4C5E00FD90DE /* Colors.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		8F0766612BAA790C00FD90DE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */,
+				8F0766622BAA792100FD90DE /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8F0766622BAA792100FD90DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE3DBD2B95546800C46030 /* Views */,
+				8FBE3D912B95525D00C46030 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		8FA4EAF82BA7C2A80046ACF4 /* Base */ = {
@@ -154,10 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				8FBE3DB92B9552C100C46030 /* Resources */,
-				8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */,
 				8FBE3DBA2B9552D200C46030 /* Components */,
-				8FBE3DBD2B95546800C46030 /* Views */,
-				8FBE3D912B95525D00C46030 /* ContentView.swift */,
+				8F0766612BAA790C00FD90DE /* Scenes */,
 				8FBE3D932B95525F00C46030 /* Assets.xcassets */,
 				8FBE3D952B95525F00C46030 /* Preview Content */,
 			);
@@ -364,7 +380,7 @@
 				8F0766602BAA4C5E00FD90DE /* Colors.swift in Sources */,
 				8F2014922B9B5C1800331110 /* ButtonProtocols.swift in Sources */,
 				8FBE3DC42B955F3F00C46030 /* XTextImageButton.swift in Sources */,
-				8FBE3D922B95525D00C46030 /* ContentView.swift in Sources */,
+				8FBE3D922B95525D00C46030 /* HomeView.swift in Sources */,
 				8F2014942B9B60CA00331110 /* ButtonEnums.swift in Sources */,
 				8FBE3D902B95525D00C46030 /* media_editorApp.swift in Sources */,
 				8FA4EAFA2BA7C3080046ACF4 /* ButtonSizes.swift in Sources */,

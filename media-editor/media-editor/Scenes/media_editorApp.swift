@@ -11,7 +11,7 @@ import SwiftUI
 struct media_editorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

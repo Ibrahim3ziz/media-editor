@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+
+/// Missing:  update fonts based on size
+///
 struct XTextImageButton: View {
     
     // MARK: - Properties
@@ -35,6 +38,7 @@ struct XTextImageButton: View {
         }
     }
     
+    /// remove backgroundColor and foregroundColor and make it based on type
     init(title: String, image: Image, backgroundColor: Color, foregroundColor: Color) {
         self.title = title
         self.image = image
