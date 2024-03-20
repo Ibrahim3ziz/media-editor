@@ -12,6 +12,8 @@ struct XTextImageButton: View {
     // MARK: - Properties
     private var title: String
     private var image: Image
+    private var backgroundColor: Color
+    private var foregroundColor: Color
     
     var body: some View {
         Button {
@@ -21,26 +23,26 @@ struct XTextImageButton: View {
                 image
                     .frame(width: 24, height: 24, alignment: .center)
                     .clipped()
-                    .foregroundStyle(.red)
                     .foregroundStyle(.white)
-                
                 Text(title)
             }
-            .foregroundColor(.white)
+            .foregroundColor(foregroundColor)
             .font(.system(size: 16, weight: .semibold))
             .frame(maxWidth: .infinity, minHeight: 52)
             .padding(.horizontal, 16)
-            .background(.placeholder)
+            .background(backgroundColor)
             .cornerRadius(16)
         }
     }
     
-    init(title: String, image: Image) {
+    init(title: String, image: Image, backgroundColor: Color, foregroundColor: Color) {
         self.title = title
         self.image = image
+        self.backgroundColor = backgroundColor
+        self.foregroundColor = foregroundColor
     }
 }
 
 #Preview {
-    XTextImageButton(title: "pro_title", image: Image(.homeEmptyState))
+    XTextImageButton(title: "pro_title", image: Image(.homeEmptyState), backgroundColor: .redHq, foregroundColor: .whiteHq)
 }
