@@ -30,7 +30,7 @@ extension Color {
     }
     
     /// #FEEA38
-    public static var yellow: Color {
+    public static var yellowHq: Color {
         return Color(red: 1.00, green: 0.92, blue: 0.22)
     }
     
@@ -45,7 +45,7 @@ extension Color {
     }
     
     /// #A06EFB
-    public static var purple: Color {
+    public static var purpleHq: Color {
         return Color(red: 0.63, green: 0.43, blue: 0.98)
     }
     
@@ -60,7 +60,7 @@ extension Color {
     }
     
     /// #FF5372
-    public static var red: Color {
+    public static var redHq: Color {
         return Color(red: 1.00, green: 0.33, blue: 0.45)
     }
     
@@ -70,17 +70,17 @@ extension Color {
     }
     
     /// #FFFFFF
-    public static var white: Color {
+    public static var whiteHq: Color {
         return Color(red: 1.00, green: 1.00, blue: 1.00)
     }
     
     /// #252525
-    public static var gray: Color {
+    public static var grayHq: Color {
         return Color(red: 0.15, green: 0.15, blue: 0.15)
     }
     
     /// #000000
-    public static var black: Color {
+    public static var blackHq: Color {
         return Color(red: 0.00, green: 0.00, blue: 0.00)
     }
     
