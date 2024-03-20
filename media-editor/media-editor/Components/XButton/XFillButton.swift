@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct XFillButton: View{
+struct XFillButton: View {
     
     // MARK: - Properties
     private var title: String
