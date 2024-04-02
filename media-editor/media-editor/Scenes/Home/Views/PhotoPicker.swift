@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  PhotoPicker.swift
 //  media-editor
 //
 //  Created by Ibrahim Abdul Aziz on 24/03/2024.
@@ -33,17 +33,13 @@ struct PhotoPicker: UIViewControllerRepresentable {
     
     class Coordinator: PHPickerViewControllerDelegate {
         
-        // The coordinator needs a reference to the thing it's linked to.
         private let parent: PhotoPicker
         
         init(_ parent: PhotoPicker) {
             self.parent = parent
         }
         
-        // Called when the user finishes picking a photo.
         func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-            
-            // Dismiss the picker.
             picker.dismiss(animated: true)
         }
     }
