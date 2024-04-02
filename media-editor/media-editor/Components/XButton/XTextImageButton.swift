@@ -18,10 +18,10 @@ struct XTextImageButton: View {
     private var backgroundColor: Color
     private var foregroundColor: Color
     
+    private let action: () -> Void
+    
     var body: some View {
-        Button {
-            
-        } label: {
+        Button(action: action, label: {
             HStack {
                 image
                     .frame(width: 24, height: 24, alignment: .center)
@@ -35,18 +35,19 @@ struct XTextImageButton: View {
             .padding(.horizontal, 16)
             .background(backgroundColor)
             .cornerRadius(16)
-        }
+        })
     }
     
     /// remove backgroundColor and foregroundColor and make it based on type
-    init(title: String, image: Image, backgroundColor: Color, foregroundColor: Color) {
+    init(title: String, image: Image, backgroundColor: Color, foregroundColor: Color, action: @escaping () -> Void) {
         self.title = title
         self.image = image
         self.backgroundColor = backgroundColor
         self.foregroundColor = foregroundColor
+        self.action = action
     }
 }
 
 #Preview {
-    XTextImageButton(title: "pro_title", image: Image(.homeEmptyState), backgroundColor: .redHq, foregroundColor: .whiteHq)
+    XTextImageButton(title: "pro_title", image: Image(.homeEmptyState), backgroundColor: .redHq, foregroundColor: .whiteHq, action: { print("Hellow") })
 }
