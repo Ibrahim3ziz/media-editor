@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8F0766602BAA4C5E00FD90DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07665F2BAA4C5E00FD90DE /* Colors.swift */; };
+		8F0766642BAE686900FD90DE /* RoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0766632BAE686900FD90DE /* RoomInfo.swift */; };
+		8F0766672BAE715000FD90DE /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0766662BAE715000FD90DE /* HomeRouter.swift */; };
+		8F0766692BAF8CE100FD90DE /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0766682BAF8CE100FD90DE /* PhotoPicker.swift */; };
+		8F0D9FDB2BD2E58B00DA6460 /* MyProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D9FDA2BD2E58B00DA6460 /* MyProjectsView.swift */; };
+		8F0D9FDE2BD2E93000DA6460 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D9FDD2BD2E93000DA6460 /* FeedsView.swift */; };
 		8F2014922B9B5C1800331110 /* ButtonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2014912B9B5C1800331110 /* ButtonProtocols.swift */; };
 		8F2014942B9B60CA00331110 /* ButtonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2014932B9B60CA00331110 /* ButtonEnums.swift */; };
 		8FA4EAFA2BA7C3080046ACF4 /* ButtonSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4EAF92BA7C3080046ACF4 /* ButtonSizes.swift */; };
@@ -46,6 +51,11 @@
 
 /* Begin PBXFileReference section */
 		8F07665F2BAA4C5E00FD90DE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8F0766632BAE686900FD90DE /* RoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfo.swift; sourceTree = "<group>"; };
+		8F0766662BAE715000FD90DE /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		8F0766682BAF8CE100FD90DE /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		8F0D9FDA2BD2E58B00DA6460 /* MyProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectsView.swift; sourceTree = "<group>"; };
+		8F0D9FDD2BD2E93000DA6460 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
 		8F2014912B9B5C1800331110 /* ButtonProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonProtocols.swift; sourceTree = "<group>"; };
 		8F2014932B9B60CA00331110 /* ButtonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEnums.swift; sourceTree = "<group>"; };
 		8FA4EAF92BA7C3080046ACF4 /* ButtonSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSizes.swift; sourceTree = "<group>"; };
@@ -106,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				8FBE3D8F2B95525D00C46030 /* media_editorApp.swift */,
+				8F0D9FDC2BD2E91F00DA6460 /* Feeds */,
+				8F0D9FD92BD2E55F00DA6460 /* MyProjects */,
 				8F0766622BAA792100FD90DE /* Home */,
 			);
 			path = Scenes;
@@ -114,10 +126,35 @@
 		8F0766622BAA792100FD90DE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8F0766652BAE713F00FD90DE /* Router */,
 				8FBE3DBD2B95546800C46030 /* Views */,
 				8FBE3D912B95525D00C46030 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8F0766652BAE713F00FD90DE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8F0766662BAE715000FD90DE /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8F0D9FD92BD2E55F00DA6460 /* MyProjects */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D9FDA2BD2E58B00DA6460 /* MyProjectsView.swift */,
+			);
+			path = MyProjects;
+			sourceTree = "<group>";
+		};
+		8F0D9FDC2BD2E91F00DA6460 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D9FDD2BD2E93000DA6460 /* FeedsView.swift */,
+			);
+			path = Feeds;
 			sourceTree = "<group>";
 		};
 		8FA4EAF82BA7C2A80046ACF4 /* Base */ = {
@@ -228,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				8FBE3DBE2B95548700C46030 /* EmptyStateView.swift */,
+				8F0766632BAE686900FD90DE /* RoomInfo.swift */,
+				8F0766682BAF8CE100FD90DE /* PhotoPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +415,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0766642BAE686900FD90DE /* RoomInfo.swift in Sources */,
+				8F0766672BAE715000FD90DE /* HomeRouter.swift in Sources */,
 				8FBE3DBF2B95548700C46030 /* EmptyStateView.swift in Sources */,
 				8F0766602BAA4C5E00FD90DE /* Colors.swift in Sources */,
 				8F2014922B9B5C1800331110 /* ButtonProtocols.swift in Sources */,
@@ -383,9 +424,12 @@
 				8FBE3D922B95525D00C46030 /* HomeView.swift in Sources */,
 				8F2014942B9B60CA00331110 /* ButtonEnums.swift in Sources */,
 				8FBE3D902B95525D00C46030 /* media_editorApp.swift in Sources */,
+				8F0D9FDB2BD2E58B00DA6460 /* MyProjectsView.swift in Sources */,
 				8FA4EAFA2BA7C3080046ACF4 /* ButtonSizes.swift in Sources */,
+				8F0766692BAF8CE100FD90DE /* PhotoPicker.swift in Sources */,
 				8FA4EB3B2BA7D71E0046ACF4 /* Fonts.swift in Sources */,
 				8FBE3DC22B955A8E00C46030 /* XFillButton.swift in Sources */,
+				8F0D9FDE2BD2E93000DA6460 /* FeedsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
