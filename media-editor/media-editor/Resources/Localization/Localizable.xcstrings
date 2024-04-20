@@ -28,6 +28,9 @@
         }
       }
     },
+    "Feeds" : {
+
+    },
     "feeds_home" : {
       "extractionState" : "manual",
       "localizations" : {
