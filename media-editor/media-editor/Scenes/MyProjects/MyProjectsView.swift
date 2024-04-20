@@ -43,11 +43,27 @@ struct MyProjectsView: View {
                                      foregroundColor: .whiteHq)
                     { showPhotoPicker = true }
                         .fullScreenCover(isPresented: $showPhotoPicker) {
-                            PhotoPicker(filter: .any(of: [.videos, .images, .livePhotos, .screenshots]), limit: 1)
-                                .ignoresSafeArea(.all, edges: .all)
+                            PhotoPicker(filter: .any(of: [.videos, .images, .livePhotos, .screenshots]), limit: 1, completion: { results in
+                                PhotoPicker
+                                    .convertToUIImageArray(fromResults: results) { images, error in
+                                        if let images, let firstImage = images.first {
+                                            selectedImage = firstImage
+                                        }
+                                    }
+                            })
+                            .ignoresSafeArea(.all, edges: .all)
                         }
                 })
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                
+                if let selectedImage {
+                    GeometryReader { geometry in
+                        Image(uiImage: selectedImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                    }
+                }
             }
         }
     }
