@@ -12,6 +12,7 @@ struct MyProjectsView: View {
     @State private var showPhotoPicker = false
     @State private var selectedImage: UIImage? = nil
     @State private var selectedVideo: UIImage? = nil
+    @State private var isShowingDetailView = false
     
     var body: some View {
         NavigationStack {
@@ -48,6 +49,7 @@ struct MyProjectsView: View {
                                     .convertToUIImageArray(fromResults: results) { images, error in
                                         if let images, let firstImage = images.first {
                                             selectedImage = firstImage
+                                            isShowingDetailView = true
                                         }
                                     }
                             })
@@ -55,20 +57,15 @@ struct MyProjectsView: View {
                         }
                 })
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-                
-                if let selectedImage {
-                    GeometryReader { geometry in
-                        Image(uiImage: selectedImage)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
-                    }
+            }
+            .navigationDestination(isPresented: $isShowingDetailView) {
+                if selectedImage != nil {
+                    ProjectDetailsView(image: selectedImage!)
                 }
             }
         }
     }
 }
-
 
 #Preview {
     MyProjectsView()
